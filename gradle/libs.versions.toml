@@ -11,6 +11,8 @@ ktor = "2.3.0"
 kotlinx-coroutine = "1.6.4"
 material = "1.9.0"
 
+vanniktech = "0.24.0"
+
 [libraries]
 # gradle plugins
 android-gradle-plugin = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
@@ -37,6 +39,7 @@ android-library = { id = "com.android.library", version.ref = "gradle" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 kotlinx-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+vanniktech-mavenpublish = { id = "com.vanniktech.maven.publish", version.ref = "vanniktech" }
 
 [bundles]
 network-ktor = ["ktor-core", "ktor-client-cio", "ktor-kotlinx-serialization"]
